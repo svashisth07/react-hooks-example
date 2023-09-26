@@ -1,0 +1,23 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin: 1rem;
+}
+
+.animate{
+    animation: use-ref 2s ease-in-out forwards;
+}
+
+@keyframes use-ref{
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translateX(0px);
+        background-color: blue;
+    }
+}
